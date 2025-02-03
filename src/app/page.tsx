@@ -2,7 +2,9 @@ import Globe from "@/components/Globe"
 import React from 'react'
 import { defaultGlobeConfig } from '@/constants/data'
 import Image from "next/image"
-import { CodeXml } from "lucide-react"
+import { CodeXml, Github } from "lucide-react"
+import Link from "next/link"
+import WhatsAppIcon from "@/components/icons/whatsapp"
 
 const HomePage = () => {
   return (
@@ -24,12 +26,31 @@ const HomePage = () => {
           <div className="flex flex-col items-center justify-center space-y-4">
             
             <div className="flex items-center justify-center gap-8 pt-4">
+              <div>
+                <Image
+                  src="/elkenzi.jpg"
+                  alt="Dusgiiye"
+                  width={1000}
+                  height={1000}
+                  className="w-[90px] h-[90px] rounded-full object-cover shadow-lg relative z-10 shadow-slate-600/50"
+                />
+              </div>
               <div className="text-center">
                 <h4 className="text-2xl font-semibold">Mohamed Abdirizak</h4>
                 <p className="text-muted-foreground">Founder & CEO Of BarePlatform</p>
-                <div className="inline-flex items-center rounded-full bg-secondary/10 mt-4 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-secondary transform-none">
-                  <CodeXml className="mr-2 h-4 w-4" />
-                  Elkenzi
+                <div className="flex items-center justify-center gap-4">
+                  <Link href="https://github.com/moelkenzi" target="_blank" >
+                    <div className="inline-flex items-center rounded-full bg-secondary/10 mt-4 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-secondary transform-none hover:shadow-lg hover:shadow-slate-800/50 transition-shadow duration-300 ease-in-out p-1">
+                      <Github className="mr-2 h-4 w-4" />
+                      <span className="font-semibold">Elkenzi</span>
+                    </div>
+                  </Link>
+                  <Link href="https://wa.me/+252613734134" target="_blank" >
+                    <div className="inline-flex items-center rounded-full bg-secondary/10 mt-4 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-secondary transform-none hover:shadow-lg hover:shadow-slate-800/50 transition-shadow duration-300 ease-in-out p-1">
+                      <WhatsAppIcon className="mr-2 h-[14px] w-[14px] text-green-400" />
+                        <span className="font-semibold">Hit me up.</span>
+                    </div>
+                  </Link>
                 </div>
               </div>
               
@@ -37,11 +58,11 @@ const HomePage = () => {
               
               <div>
                 <Image
-                  src="/Dugsiiye_5th-Anniversity.jpg"
+                  src="/bareplatform.png"
                   alt="Dusgiiye"
                   width={1000}
                   height={1000}
-                  className="w-[90px] h-[90px] rounded-full object-cover shadow-lg"
+                  className="w-[90px] h-[90px] rounded-full object-cover shadow-lg relative z-10 shadow-slate-600/50"
                 />
               </div>
             </div>
