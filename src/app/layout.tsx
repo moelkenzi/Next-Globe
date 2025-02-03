@@ -35,7 +35,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-        {children}
+        <main className="absolute inset-0 overflow-hidden p-0">
+          {children}
+        </main>
         </ThemeProvider>
       </body>
     </html>
