@@ -2,13 +2,11 @@ import Globe from "@/components/Globe"
 import React from 'react'
 import { defaultGlobeConfig } from '@/constants/data'
 import Image from "next/image"
-import { CheckCircle2Icon, CodeXml, Users } from "lucide-react"
-// import Navbar from "@/components/navbar"
+import { CodeXml } from "lucide-react"
 
 const HomePage = () => {
   return (
     <>
-    {/* <Navbar className="absolute bottom-0 left-0 right-0 z-50 pointer-events-none" /> */}
     <div>
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow relative w-full overflow-hidden">
@@ -24,10 +22,6 @@ const HomePage = () => {
       <div className="w-full py-10 text-center flex justify-center items-center">
         <div className="container max-w-4xl">
           <div className="flex flex-col items-center justify-center space-y-4">
-            {/* <div className="inline-flex items-center rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-secondary transform-none">
-              <Users className="mr-2 h-4 w-4" />
-              Message from Our CEO
-            </div> */}
             
             <div className="flex items-center justify-center gap-8 pt-4">
               <div className="text-center">
