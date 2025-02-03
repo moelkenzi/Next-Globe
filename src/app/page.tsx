@@ -2,7 +2,7 @@ import Globe from "@/components/Globe"
 import React from 'react'
 import { defaultGlobeConfig } from '@/constants/data'
 import Image from "next/image"
-import { CodeXml, Github } from "lucide-react"
+import {  Github } from "lucide-react"
 import Link from "next/link"
 import WhatsAppIcon from "@/components/icons/whatsapp"
 
